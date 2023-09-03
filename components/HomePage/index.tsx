@@ -43,9 +43,28 @@ const HomePage = () => {
           <h2>pepnops</h2>
         </span>
         <span>
-          <i className="fa-brands fa-instagram"></i>
-          <i className="fa-brands fa-linkedin"></i>
-          <i className="fa-brands fa-twitter"></i>
+          <a
+            target={`_blank`}
+            rel="noopener noreferrer"
+            href="https://twitter.com/pepnops"
+          >
+            <i className="fa-brands fa-twitter"></i>
+          </a>
+
+          <a
+            target={`_blank`}
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/company/pepnops/"
+          >
+            <i className="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            target={`_blank`}
+            rel="noopener noreferrer"
+            href="https://instagram.com/pepnops"
+          >
+            <i className="fa-brands fa-instagram"></i>
+          </a>
         </span>
       </div>
     </div>
