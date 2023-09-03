@@ -15,7 +15,7 @@ const HomePage = () => {
           <p>
             Thank you for your patience as we diligently work on <br />
             creating our new website and crafting solutions to <br />
-            simplify your {`life's`}journey.
+            simplify your {`life's`} journey.
           </p>
           <div className={styles.enter}>
             <input
