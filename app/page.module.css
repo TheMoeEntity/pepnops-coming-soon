@@ -18,6 +18,9 @@
 .home > div h1 {
   font-weight: 900px;
   margin-bottom: 30px;
+  margin-right: 0;
+  margin-left: 0;
+  font-size: 35px;
 }
 .home > div h2 {
   font-weight: bolder;
@@ -33,6 +36,9 @@
   justify-content: space-between;
   align-items: center;
 }
+.home > div:first-child > div:nth-child(1) {
+  width: 48%;
+}
 .home > div:first-child > div:nth-child(2) {
   position: relative;
   width: calc(0.95 * 464px);
@@ -40,7 +46,7 @@
   max-width: 100%;
 }
 .enter {
-  width: 100%;
+  width: fit-content;
   max-width: 100%;
   height: fit-content;
   margin-top: 30px;
@@ -55,7 +61,7 @@
   background-color: transparent;
   outline: none;
   border: none;
-  min-width: 200px;
+  min-width: 150px;
   padding: 10px 25px;
   border-radius: 25px;
 }
@@ -65,7 +71,7 @@
   font-weight: bold;
   border-radius: 25px;
   border: none;
-  font-size: large;
+  font-size: medium;
   outline: none;
   width: fit-content;
   padding: 10px 25px;
@@ -93,6 +99,9 @@
   }
 }
 @media screen and (max-width: 889px) {
+  .home > div:first-child > div:nth-child(1) {
+    width: 75%;
+  }
   .home > div:first-child {
     justify-content: center;
   }
@@ -100,10 +109,23 @@
     margin-top: 60px;
   }
 }
+
+@media screen and (max-width: 580px) {
+  .home > div:first-child > div:nth-child(1) {
+    width: 100%;
+  }
+  .enter {
+    max-width: 100%;
+  }
+}
 @media screen and (max-width: 464px) {
   .home > div:first-child {
     justify-content: center;
     flex-flow: column wrap;
+  }
+
+  .home > div h1 {
+    font-size: 30px;
   }
   .home > div {
     padding: 30px 15px;
@@ -121,7 +143,7 @@
     padding: 7px 25px;
   }
   .enter input {
-    min-width: 100px;
+    min-width: 90px;
     font-size: small;
     padding: 10px 25px;
     border-radius: 25px;
@@ -156,5 +178,20 @@
   }
   .home > div h1 {
     font-size: 25px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .home > div:first-child > div:nth-child(2) {
+    width: calc(0.4 * 464px);
+    height: calc(0.4 * 390px);
+  }
+  .enter {
+    padding: 10px 15px;
+  }
+  .home p {
+    font-size: xx-small;
+  }
+  .home > div h1 {
+    font-size: 20px;
   }
 }

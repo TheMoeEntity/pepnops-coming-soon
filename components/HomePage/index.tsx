@@ -8,14 +8,13 @@ const HomePage = () => {
       <div>
         <div>
           <h1>
-            We are going through <br />
-            all the stress so you <br />
-            {`don't `}have to!
+            We are going through all the stress so you
+            {` don't `}have to!
           </h1>
           <p>
-            Thank you for your patience as we diligently work on <br />
-            creating our new website and crafting solutions to <br />
-            simplify your {`life's`} journey.
+            Thank you for your patience as we diligently work on creating our
+            new website and crafting solutions to simplify your {`life's`}{" "}
+            journey.
           </p>
           <div className={styles.enter}>
             <input
