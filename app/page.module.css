@@ -118,7 +118,7 @@
   }
   .enter button {
     font-size: small;
-    padding: 7px 20px;
+    padding: 7px 25px;
   }
   .enter input {
     min-width: 100px;
@@ -132,31 +132,27 @@
     width: calc(0.65 * 464px);
     height: calc(0.65 * 390px);
   }
+
+  .enter button {
+    padding: 7px 18px;
+    width: 40%;
+  }
 }
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 360px) {
   .home > div:first-child > div:nth-child(2) {
     width: calc(0.55 * 464px);
     height: calc(0.55 * 390px);
   }
   .enter {
-    flex-flow: column wrap;
-    border-radius: 10px;
-    padding: 20px 10px;
+    padding: 10px 15px;
   }
   .home p {
     font-size: x-small;
   }
   .enter button {
-    font-size: x-small;
-    padding: 7px 20px;
-    width: 100%;
-    border-radius: 10px;
-  }
-  .enter input {
-    min-width: 160px;
-    width: 100%;
-    font-size: x-small;
-    padding: 10px 20px;
+    font-size: xx-small;
+    padding: 7px 18px;
+    width: 40%;
   }
   .home > div h1 {
     font-size: 25px;
